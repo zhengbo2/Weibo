@@ -1,0 +1,70 @@
+{
+  "name": "dsh-peak-strip",
+  "version": "0.1.0",
+  "description": "DSH Go 输入框上方的峰谷提示条：显示当前是高峰还是空闲，以及距离切换的倒计时。A peak/off-peak strip for DSH Go with a live countdown.",
+  "author": "围脖",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-go",
+    "peak-hours",
+    "off-peak",
+    "pricing"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengbo2/Weibo.git"
+  },
+  "homepage": "https://github.com/zhengbo2/Weibo#readme",
+  "engines": {
+    "node": ">=18",
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "峰谷",
+      "en": "Peak hours"
+    },
+    "icon": "clock",
+    "contributes": {
+      "composer.strip": [
+        {
+          "id": "peak-strip",
+          "icon": "clock",
+          "panel": "peak"
+        }
+      ],
+      "panels": [
+        {
+          "id": "peak",
+          "title": {
+            "zh": "峰谷",
+            "en": "Peak hours"
+          },
+          "icon": "clock",
+          "placement": [
+            "chat.panel",
+            "session.tab",
+            "features"
+          ]
+        }
+      ]
+    }
+  }
+}
