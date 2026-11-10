@@ -1,5 +1,7 @@
 # dsh-peak-strip · 峰谷提示条
 
+![preview](assets/preview.png)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 **DSH Go** 手机原生界面加一行峰谷提示：当前是高峰还是空闲、距离切换还有多久。
 
 - 输入框上方一行：`峰 ×2 · 距空闲 2:58:31`，谷时变成 `谷 5折 · 距高峰 1天 23:00`，高峰橙、谷时绿
