@@ -1,6 +1,6 @@
 {
   "name": "dsh-peak-strip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH Go 输入框上方的峰谷提示条：显示当前是高峰还是空闲，以及距离切换的倒计时。A peak/off-peak strip for DSH Go with a live countdown.",
   "author": "围脖",
   "type": "module",
